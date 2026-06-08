@@ -1,0 +1,159 @@
+html{
+    scroll-behavior:smooth;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#AC8C6F;
+    color:white;
+    padding:15px 30px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+.hero{
+    text-align:center;
+    padding:120px 20px;
+    background:#A0D4E0;
+}
+
+.hero h1{
+    font-size:clamp(2rem,5vw,4rem);
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.hero button{
+    margin-top:25px;
+    padding:12px 30px;
+    border:none;
+    border-radius: 30px;
+    background:white ;
+    cursor:pointer;
+}
+.about{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.about h2{
+    margin-bottom:20px;
+}
+
+.services{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.service-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.card{
+    width:250px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.card:hover{
+    transform:translateY(-8px);
+}
+.contact{
+    padding:60px 20px;
+    text-align:center;
+}
+
+form{
+    max-width:500px;
+    margin:30px auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+textarea{
+    height:120px;
+}
+
+form button{
+    background:#AC8C6F;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+footer{
+    background:#AC8C6F;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+@media (max-width: 768px){
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    }
+
+    nav a:visited{
+    color:white;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .service-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:90%;
+    }
+
+}
