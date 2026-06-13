@@ -27,4 +27,4 @@ To create a responsive mobile-first website using HTML, CSS, and JavaScript.
 - images
 
 ## Author
-Sai Neha Reddy
+S Rohith Reddy
